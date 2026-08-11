@@ -1,4 +1,4 @@
-# 简阳笔记 · AI 图像工具导航站 — 设计文档
+﻿# 简扬笔记 · AI 图像工具导航站 — 设计文档
 
 **日期：** 2026-08-11  
 **状态：** 已确认需求，待实现  
@@ -71,7 +71,7 @@ jianyang-Notes/
 
 ```
 [顶栏]
-  标题：简阳笔记 · Jianyang Notes
+  标题：简扬笔记 · Jianyang Notes
   副标题：精选 AI 图像工具导航 / Curated AI Image Tools
 
 [工具栏]
@@ -170,7 +170,7 @@ jianyang-Notes/
 - [ ] 13 个外链均可打开（`https://` 正确）
 - [ ] 搜索「生图」「meme」「OCR」等能正确过滤
 - [ ] 手机宽度下单列可读、按钮可点
-- [ ] 页面 `title` / `description` 含「简阳笔记」与工具导航语义
+- [ ] 页面 `title` / `description` 含「简扬笔记」与工具导航语义
 
 ---
 
@@ -181,6 +181,6 @@ jianyang-Notes/
 | 布局 | 卡片列表（非树形） |
 | 技术 | 纯静态 HTML/CSS/JS |
 | 语言 | 中英并排 |
-| 站名 | 简阳笔记 · Jianyang Notes |
+| 站名 | 简扬笔记 · Jianyang Notes |
 | 分组 | 不分组，全部平铺 |
 | SEO | 内容内嵌 HTML，避免 CSR SPA |

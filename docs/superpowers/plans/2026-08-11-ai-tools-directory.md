@@ -1,8 +1,8 @@
-# 简阳笔记 AI 工具导航站 Implementation Plan
+﻿# 简扬笔记 AI 工具导航站 Implementation Plan
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
-**Goal:** 用纯静态 HTML/CSS/JS 实现「简阳笔记」AI 图像工具推荐页，卡片平铺、中英并排、可被搜索引擎抓取。
+**Goal:** 用纯静态 HTML/CSS/JS 实现「简扬笔记」AI 图像工具推荐页，卡片平铺、中英并排、可被搜索引擎抓取。
 
 **Architecture:** 三文件静态站。`index.html` 内嵌全部 13 张卡片文案（SEO）；`styles.css` 负责浅灰蓝网格背景与响应式卡片；`script.js` 仅做搜索过滤，关闭 JS 仍可读全站内容。
 
@@ -15,7 +15,7 @@
 - 内容必须写在初始 HTML DOM 中，禁止用 JS 注入卡片列表
 - 外链一律 `https://` + 域名，`target="_blank"` + `rel="noopener noreferrer"`
 - 中英简介与标签并排显示；不分组；不使用 SPA/React
-- 站名：简阳笔记 · Jianyang Notes
+- 站名：简扬笔记 · Jianyang Notes
 - 视觉：背景 `#E8F0F6`，主色 `#1A6FDB`，标题色 `#1A2332`；字体 DM Sans + Source Sans 3
 - 搜索无结果文案：未找到匹配的工具 / No tools matched
 
@@ -41,14 +41,14 @@
 
 - [ ] **Step 1: 创建 `index.html`**
 
-包含：`lang="zh-CN"`；`<title>简阳笔记 · Jianyang Notes — AI 图像工具导航</title>`；meta description；引入 Google Fonts、`styles.css`、文末 `script.js`。
+包含：`lang="zh-CN"`；`<title>简扬笔记 · Jianyang Notes — AI 图像工具导航</title>`；meta description；引入 Google Fonts、`styles.css`、文末 `script.js`。
 
 结构要点：
-- `header.site-header`：`h1` 简阳笔记 · Jianyang Notes；副标题双语
+- `header.site-header`：`h1` 简扬笔记 · Jianyang Notes；副标题双语
 - `div.toolbar`：`<label for="search-input">` + `<input id="search-input" type="search">`
 - `main#tool-grid`：13 个 `<article class="tool-card">`
 - `p#empty-state`：未找到匹配的工具 / No tools matched（`hidden`）
-- `footer`：© 2026 简阳笔记 · Jianyang Notes · 更新 2026-08-11
+- `footer`：© 2026 简扬笔记 · Jianyang Notes · 更新 2026-08-11
 
 每张卡片模板：
 
@@ -69,7 +69,7 @@
 
 - [ ] **Step 2: 核对 SEO 与链接**
 
-确认：页面源码中可直接搜到「简阳笔记」「YeVideo」「phototoexcel.info」等；13 个 `https://` 链接与 spec 一致。
+确认：页面源码中可直接搜到「简扬笔记」「YeVideo」「phototoexcel.info」等；13 个 `https://` 链接与 spec 一致。
 
 - [ ] **Step 3: Commit**
 
@@ -177,7 +177,7 @@ git commit -m "Add client-side search filter for tool cards"
 - 13 个外链 `https://` 正确
 - 搜索「生图」「meme」「OCR」过滤正确
 - 窄屏单列可读
-- `title` / `description` 含简阳笔记与导航语义
+- `title` / `description` 含简扬笔记与导航语义
 
 - [ ] **Step 2: 若有问题则修复并追加 commit**
 
